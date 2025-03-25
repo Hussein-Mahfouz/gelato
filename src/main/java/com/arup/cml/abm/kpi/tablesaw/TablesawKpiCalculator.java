@@ -34,10 +34,6 @@ import java.time.Instant;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Optional;
 import java.util.function.Consumer;
 
 import static tech.tablesaw.aggregate.AggregateFunctions.*;
@@ -110,6 +106,8 @@ public class TablesawKpiCalculator implements KpiCalculator {
         columnMapping.put("start_y", ColumnType.DOUBLE);
         columnMapping.put("end_x", ColumnType.DOUBLE);
         columnMapping.put("end_y", ColumnType.DOUBLE);
+        columnMapping.put("start_link", ColumnType.STRING);
+        columnMapping.put("end_link", ColumnType.STRING);
         columnMapping.put("start_activity_type", ColumnType.STRING);
         columnMapping.put("start_facility_id", ColumnType.STRING);
         columnMapping.put("end_activity_type", ColumnType.STRING);
